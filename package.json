@@ -1,0 +1,60 @@
+{
+  "name": "linecount",
+  "version": "1.0.0",
+  "description": "A fast, smart line counter that automatically ignores common build artifacts and dependencies",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "linecount": "dist/cli.js"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/cli.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "cloc",
+    "lines",
+    "code",
+    "counter",
+    "loc",
+    "sloc",
+    "line-counter",
+    "code-analysis",
+    "statistics"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/linecount.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/linecount/issues"
+  },
+  "homepage": "https://github.com/yourusername/linecount#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "cli-table3": "^0.6.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
