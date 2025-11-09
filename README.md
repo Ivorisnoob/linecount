@@ -41,6 +41,23 @@ linecount ./src
 linecount /path/to/project
 ```
 
+Exclude specific directories:
+```bash
+linecount --exclude-dir tests docs
+linecount --exclude-dir build temp
+```
+
+Exclude specific file extensions:
+```bash
+linecount --exclude-ext .md .txt
+linecount --exclude-ext .test.js .spec.ts
+```
+
+Combine multiple options:
+```bash
+linecount ./src --exclude-dir __tests__ --exclude-ext .md .json
+```
+
 Show help information:
 ```bash
 linecount --help
