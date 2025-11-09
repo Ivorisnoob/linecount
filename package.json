@@ -1,5 +1,5 @@
 {
-  "name": "linecount",
+  "name": "@ivorisnoob/linecount",
   "version": "1.0.0",
   "description": "A fast, smart line counter that automatically ignores common build artifacts and dependencies",
   "main": "dist/index.js",
@@ -40,12 +40,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/linecount.git"
+    "url": "https://github.com/ivorisnoob/linecount.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/linecount/issues"
+    "url": "https://github.com/ivorisnoob/linecount/issues"
   },
-  "homepage": "https://github.com/yourusername/linecount#readme",
+  "homepage": "https://github.com/ivorisnoob/linecount#readme",
   "engines": {
     "node": ">=18.0.0"
   },
